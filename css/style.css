@@ -135,12 +135,27 @@ div.contenitori-a>a{
 .dischi{
     width: calc((100% / 6) - 1rem);
     
+    text-align: center;
+
     /* da eliminare */
-    background-color: red;
-    height: 200px; 
+    /* background-color: red; */
+    /* height: 200px;  */
     /* --------- */
 
 
+}
+
+.img-dischi{
+    width: 100%;
+}
+
+div.dischi>h2,
+div.dischi>p{
+    margin-top: 0.5rem;
+}
+
+div.dischi>h2{
+    font-size: 0.9rem;
 }
 
 
@@ -162,26 +177,48 @@ section.conteiner>p.color-grey{
 
     width:calc((100% / 6) - 1rem);
 
+    text-align: center;
     /* da eliminare */
-    height: 200px;
-    background-color: blue;
+    /* height: 200px; */
+    /* background-color: blue; */
     /* --- */
 }
+
+.img-suggerimenti{
+    width: 100%;
+}
+
+div.suggerimenti>h2{
+    margin-top: 0.5rem;
+    font-size: 0.8rem;
+}
+
 
 /* ------------- */
 
 .artisti{
 
     width: calc((100% / 6) - 1rem);
-
-    border-radius: 100%;
+    text-align: center;
+    /* border-radius: 100%; */
 
     /* da eliminare */
-    height: 250px;
-    background-color: violet;
+    /* height: 250px; */
+    /* background-color: violet; */
     /* --------- */
 
 }
+
+.img-artisti{
+    width: 100%;
+    border-radius: 100%;
+}
+
+div.artisti>h2{
+    font-size: 0.8rem;
+    margin-top: 0.5rem;
+}
+
 
 @media all and (max-width:768px) {
     
@@ -259,7 +296,7 @@ section.conteiner>p.color-grey{
        display: block;
    }
 
-   
-
     
 }
+
+/* ---------- */
