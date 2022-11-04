@@ -53,6 +53,11 @@ footer{
 }
 /* ----------------- */
 
+.conteiner {
+    width: 95%;
+    margin: 0 auto;
+}
+
 .text-uppercase{
     text-transform: uppercase;
 }
@@ -69,6 +74,13 @@ footer{
     overflow-y: scroll;
 }
 
+.margine-generale {
+    margin: 0 0.5rem;
+}
+
+.padding-left-right{
+    padding: 1rem 0.5rem;
+}
 
 
 /* -------------------- */
@@ -108,10 +120,7 @@ section.nav-main>a{
 
 /* ----------------- */
 
-.conteiner{
-    width: 95%;
-    margin: 0 auto;
-}
+
 
 
 .dischi{
@@ -125,17 +134,6 @@ section.nav-main>a{
 
 }
 
-.margine-dischi-centrali{
-    margin: 0 0.5rem;
-}
-
-.margine-disco-laterale-sx{
-    margin-right: 0.5rem;
-}
-
-.margine-disco-laterale-dx{
-    margin-left: 0.5rem;
-}
 
 /* ------------ */
 
@@ -174,7 +172,36 @@ section.conteiner>p.color-grey{
     background-color: violet;
     /* --------- */
 
+}
+
+@media all and (max-width:768px) {
+    
+    .dischi{
+        width: calc((100% / 4) - 1rem);
+    }
+
+    .dischi:nth-last-child(1){
+        margin-top: 0.5rem;
+    }
+
+    .dischi:nth-last-child(2) {
+        margin-top: 0.5rem;
+    }
 
 
+
+    .suggerimenti{
+        width: calc((100% / 4) - 1rem);
+    }
+
+    .artisti{
+        width: calc((100% / 4) - 1rem);
+    }
+
+
+    section.nav-main>a:last-child{
+        margin-top: 2rem;
+        display: inline-block;
+    }
 
 }
