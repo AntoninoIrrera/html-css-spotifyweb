@@ -107,11 +107,11 @@ section.nav-main>a{
 
 
 .dischi{
-    background-color: red;
-    width: calc(100% / 6);
-
+    width: calc((100% / 6) - 1rem);
+    
     /* da eliminare */
-    height: 100px; 
+    background-color: red;
+    height: 200px; 
     /* --------- */
 
 
@@ -127,4 +127,28 @@ section.nav-main>a{
 
 .margine-disco-laterale-dx{
     margin-left: 0.5rem;
+}
+
+/* ------------ */
+
+.color-grey{
+    color: grey;
+}
+
+section.conteiner>p.color-grey{
+    font-weight: bold;
+    font-size: 0.8rem;
+    margin-top: 0.5rem;
+}
+
+/* ------------ */
+
+.suggerimenti{
+
+    width:calc((100% / 6) - 1rem);
+
+    /* da eliminare */
+    height: 200px;
+    background-color: blue;
+    /* --- */
 }
