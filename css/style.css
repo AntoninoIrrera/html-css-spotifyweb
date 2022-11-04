@@ -110,7 +110,11 @@ footer{
     text-align: center;
 }
 
-section.nav-main>a{
+.contenitori-a{
+    display: inline;
+}
+
+div.contenitori-a>a{
     text-decoration: none;
     color: grey;
     font-weight: bold;
@@ -198,10 +202,41 @@ section.conteiner>p.color-grey{
         width: calc((100% / 4) - 1rem);
     }
 
-
-    section.nav-main>a:last-child{
+    
+    section.nav-main>div.contenitori-a:last-child>a:last-child {
         margin-top: 2rem;
         display: inline-block;
+    }
+    
+
+}
+
+@media all and (max-width:576px) {
+
+    .dischi {
+        width: calc((100% / 2) - 1rem);
+    }
+
+    .suggerimenti {
+        width: calc((100% / 2) - 1rem);
+    }
+
+    .artisti {
+        width: calc((100% / 2) - 1rem);
+    }
+
+
+    .dischi:nth-last-child(3) {
+        margin-top: 0.5rem;
+    }
+
+    .dischi:nth-last-child(4) {
+        margin-top: 0.5rem;
+    }
+
+   
+    section.nav-main>div.contenitori-a:last-child {
+        margin-top: 2rem;
     }
 
 }
