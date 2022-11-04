@@ -114,6 +114,11 @@ footer{
     display: inline;
 }
 
+.contenitori-a-2 {
+    display: inline;
+}
+
+div.contenitori-a-2>a,
 div.contenitori-a>a{
     text-decoration: none;
     color: grey;
@@ -203,7 +208,7 @@ section.conteiner>p.color-grey{
     }
 
     
-    section.nav-main>div.contenitori-a:last-child>a:last-child {
+    .contenitori-a-2>a:last-child {
         margin-top: 2rem;
         display: inline-block;
     }
@@ -234,9 +239,27 @@ section.conteiner>p.color-grey{
         margin-top: 0.5rem;
     }
 
-   
-    section.nav-main>div.contenitori-a:last-child {
-        margin-top: 2rem;
+    .contenitori-a{
+        display: block;
     }
 
+    
+   
+    
+
+}
+
+@media all and (max-width:575px) {
+
+   .contenitori-a{
+    display: inline;
+   }
+
+   .contenitori-a-2 {
+       display: block;
+   }
+
+   
+
+    
 }
