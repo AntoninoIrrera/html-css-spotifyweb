@@ -21,15 +21,6 @@ main{
 }
 
 
-.flex{
-    display: flex;
-}
-
-.f-wrap{
-    flex-wrap: wrap;
-}
-
-
 footer{
     background-color: #282828;
     height: 10vh;
@@ -51,6 +42,7 @@ footer{
     }
     
 }
+
 /* ----------------- */
 
 .conteiner {
@@ -60,6 +52,18 @@ footer{
 
 .text-uppercase{
     text-transform: uppercase;
+}
+
+.flex {
+    display: flex;
+}
+
+.f-wrap {
+    flex-wrap: wrap;
+}
+
+.f-direction-column{
+    flex-direction: column;
 }
 
 .color-white{
@@ -81,6 +85,75 @@ footer{
 .padding-left-right{
     padding: 1rem 0.5rem;
 }
+
+/* --------------- */
+
+.padding-header{
+    padding: 1rem;
+}
+
+.margine-header-top-bottom{
+    margin: 0.5rem 0;
+}
+
+.f-size-header{
+    font-size: 0.8rem;
+}
+
+.align-items-center{
+    align-items: center;
+}
+
+
+nav.flex{
+
+    height: 100%;
+
+    justify-content: space-between;
+}
+
+.img-logo{
+    width: 80%;
+
+    margin-bottom: 1.5rem;
+
+}
+
+.img-utility{
+    width: 15%;
+
+}
+
+
+.img-dowload{
+    width: 5%;
+}
+
+.img-profile{
+    width: 10%;
+}
+
+div.flex>h3.f-size-header{
+    margin-left: 0.3rem;
+}
+
+div.align-items-center>i{
+    font-size: 3rem;
+}
+
+.margine-playlist{
+    margin: 1.2rem 0;
+}
+
+div.riga>hr{
+    border-color: grey;
+}
+
+
+
+
+
+
 
 
 /* -------------------- */
@@ -110,16 +183,21 @@ footer{
     text-align: center;
 }
 
-.contenitori-a{
+.contenitori-a3{
     display: inline;
 }
 
-.contenitori-a-2 {
+.contenitori-a2 {
     display: inline;
 }
 
-div.contenitori-a-2>a,
-div.contenitori-a>a{
+.contenitori-a1 {
+    display: inline;
+}
+
+div.contenitori-a3>a,
+div.contenitori-a2>a,
+div.contenitori-a1>a{
     text-decoration: none;
     color: grey;
     font-weight: bold;
@@ -244,10 +322,13 @@ div.artisti>h2{
         width: calc((100% / 4) - 1rem);
     }
 
+    .contenitori-a1{
+        display: block;
+    }
+
     
-    .contenitori-a-2>a:last-child {
+    .contenitori-a1{
         margin-top: 2rem;
-        display: inline-block;
     }
     
 
@@ -276,8 +357,12 @@ div.artisti>h2{
         margin-top: 0.5rem;
     }
 
-    .contenitori-a{
+    .contenitori-a3{
         display: block;
+    }
+
+    .contenitori-a1 {
+        display: inline-block;
     }
 
     
@@ -288,11 +373,11 @@ div.artisti>h2{
 
 @media all and (max-width:575px) {
 
-   .contenitori-a{
+   .contenitori-a3{
     display: inline;
    }
 
-   .contenitori-a-2 {
+   .contenitori-a2{
        display: block;
    }
 
