@@ -71,7 +71,7 @@ footer{
 }
 
 .overflow-y{
-    overflow-y: scroll;
+    overflow-y: auto;
 }
 
 .margine-generale {
@@ -220,7 +220,7 @@ div.artisti>h2{
 }
 
 
-@media all and (max-width:768px) {
+@media all and (max-width:992px) {
     
     .dischi{
         width: calc((100% / 4) - 1rem);
@@ -253,7 +253,7 @@ div.artisti>h2{
 
 }
 
-@media all and (max-width:576px) {
+@media all and (max-width:768px) {
 
     .dischi {
         width: calc((100% / 2) - 1rem);
