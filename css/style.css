@@ -119,6 +119,13 @@ nav.flex{
 
 }
 
+.img-logo-small{
+
+  
+    
+    display: none;
+}
+
 .img-utility{
     width: 15%;
 
@@ -149,6 +156,52 @@ div.riga>hr{
     border-color: grey;
 }
 
+
+@media all and (max-width:575px) {
+
+    .padding-header{
+        padding: 0.5rem;
+    }
+
+    .playlist{
+        display: none;
+    }
+
+    .img-logo{
+        display: none;
+    }
+
+    .img-logo-small{
+        display: inline-block;
+        width: 100%;
+    }
+    
+    div.flex>h3.f-size-header{
+        display: none;
+    }
+
+    div.riga>hr {
+        display: none;
+    }
+
+    .img-utility{
+        width: 100%;
+    }
+
+    .img-dowload{
+        width: 50%;
+
+
+    }
+
+    .img-profile{
+        width: 80%;
+    }
+
+    .align-items-center{
+        justify-content: center;
+    }
+}
 
 
 
