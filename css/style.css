@@ -23,8 +23,14 @@ main{
 
 footer{
     background-color: #282828;
+
+/* da controllare */
     height: 10vh;
+/* ----- */
+    
     width: 100%;
+
+
 
 
     
@@ -56,6 +62,10 @@ footer{
 
 .flex {
     display: flex;
+}
+
+.justify-content-space-between{
+    justify-content: space-between;
 }
 
 .f-wrap {
@@ -100,9 +110,12 @@ footer{
     font-size: 0.8rem;
 }
 
-.align-items-center{
+
+.align-items-center,
+.align-items-center-header{
     align-items: center;
 }
+
 
 
 nav.flex{
@@ -149,7 +162,7 @@ div.flex>h3.f-size-header{
     margin-left: 0.3rem;
 }
 
-div.align-items-center>i{
+div.align-items-center-header>i{
     font-size: 3rem;
 }
 
@@ -206,7 +219,7 @@ div.riga>hr{
         width: 80%;
     }
 
-    .align-items-center{
+    .align-items-center-header{
         justify-content: center;
     }
 }
@@ -445,4 +458,201 @@ div.artisti>h2{
     
 }
 
+
+@media all and (max-width:430px) {
+
+    .contenitori-a3{
+        display: block;
+    }
+
+    section.nav-main>div:last-child{
+        margin-top: 0.5rem;
+    }
+    
+    .contenitori-a2{
+        display: inline;
+    }
+
+    .contenitori-a1{
+        display: inline;
+    }
+}
+
+@media all and (max-width:320px) {
+
+    .contenitori-a1{
+        display: inline-block;
+        margin-top: 0.5rem;
+    }
+    
+}
+
 /* ---------- */
+
+
+
+.margini-footer-1rem{
+    margin: 0 1rem;
+}
+
+.margini-footer-5rem{
+
+    margin: 0 0.5rem;
+}
+
+div.margini-footer-1rem>h3{
+    font-size: 0.8rem;
+}
+
+div.margini-footer-1rem>p {
+    font-size: 0.8rem;
+}
+
+.img-footer{
+    height: 100%;
+}
+
+.first-section-footer{
+    padding: 0.5rem 0.5rem 0.5rem 1.5rem;
+}
+
+.last-section-footer{
+    justify-content: end;
+    padding-right: 1rem;
+}
+
+footer.flex>section.flex{
+    width: calc(100% / 3);
+}
+
+footer.flex>section.f-direction-column{
+    padding: 0.5rem;
+}
+
+section.f-direction-column{
+    justify-content: center;
+    align-items: center;
+}
+
+.tempo-trascorso-canzone{
+    width: 70px;
+}
+
+.tempo-bianco{ 
+    border: 2px solid white;
+    border-radius: 25px;
+}
+
+.tempo-grigio{
+    border: 2px solid grey;
+    border-radius: 25px;
+}
+
+.tempo-totale-canzone{
+    width: 250px;
+}
+
+footer div.flex{
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+footer div.flex>p:first-child{
+    margin-right: 0.5rem;
+}
+
+footer div.flex>p:last-child{
+    margin-left: 0.5rem;
+}
+
+footer div>i{
+    margin: 0 0.5rem 0.5rem 0.5rem;
+    font-size: 1.3rem;
+}
+
+
+
+.tempo-trascorso-volume {
+    width: 50px;
+}
+
+.tempo-totale-volume {
+    width: 100px;
+}
+
+section.flex>i{
+    margin: 0 1rem;
+    font-size: 0.8rem;
+}
+
+
+@media all and (max-width:992px) {
+    
+    
+
+    
+
+    div.margini-footer-1rem>p {
+        width: 70px;
+    }
+
+    section.flex>i.fa-heart,
+    section.flex>i.fa-folder{
+        margin: 0 0.5rem;
+    }
+
+}
+
+@media all and (max-width:768px){
+
+    footer>section>section.flex{
+        flex-direction: column;
+    }
+
+    footer>section>section.flex>i:first-child {
+        margin-bottom: 0.5rem;
+    }
+
+}
+
+@media all and (max-width:660px){
+
+    section.flex>i{
+        margin: 0 0.2rem;
+    }
+
+    footer div>i{
+        font-size: 1.1rem;
+    margin: 0 0.3rem 0.3rem 0.3rem;
+    }
+
+    div.margini-footer-1rem>p{
+        width: 100%;
+    }
+
+}
+
+@media all and (max-width:425px) {
+
+   
+
+    footer div>i {
+        font-size: 0.8rem;
+        margin: 0 0.2rem 0.2rem 0.2rem;
+    }
+
+    .first-section-footer{
+        padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+    }
+
+    .margini-footer-1rem{
+        margin: 0 0.2rem;
+    }
+
+    section.flex>i.fa-heart,
+    section.flex>i.fa-folder{
+        margin: 0 0.2rem;
+    }
+
+}

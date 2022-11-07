@@ -18,22 +18,22 @@
                         <img class="img-logo" src="./img/logo.svg" alt="logo">
                         <img class="img-logo-small" src="./img/logo-small.svg" alt="logo-small">
                         <section class="flex f-direction-column">    
-                            <div class="flex margine-header-top-bottom align-items-center">
+                            <div class="flex margine-header-top-bottom align-items-center-header">
                                 <img class="img-utility" src="./img/home.svg" alt="home">
                                 <h3 class="color-grey f-size-header">Home</h3>
                             </div>
-                            <div class="flex margine-header-top-bottom align-items-center">
+                            <div class="flex margine-header-top-bottom align-items-center-header">
                                 <img class="img-utility" src="./img/search.svg" alt="search">
                                 <h3 class="color-grey f-size-header">Cerca</h3>
                             </div>
-                            <div class="flex margine-header-top-bottom align-items-center">
+                            <div class="flex margine-header-top-bottom align-items-center-header">
                                 <img class="img-utility" src="./img/libreria.svg" alt="libreria">
                                 <h3 class="color-grey f-size-header">La tua libreria</h3>
                             </div>
                         </section>
                         <section class="playlist">
                             <h2 class="color-white margine-header-top-bottom text-uppercase f-size-header">playlist</h2>
-                            <div class="flex margine-header-top-bottom align-items-center">
+                            <div class="flex margine-header-top-bottom align-items-center-header">
                                 <i class="fa-solid fa-square-plus color-grey"></i>
                                 <h3 class="color-grey f-size-header">Crea Playlist</h3>
                             </div>
@@ -47,12 +47,12 @@
                         </section>
                     </section>
                     <section>
-                        <div class="flex margine-header-top-bottom align-items-center">
+                        <div class="flex margine-header-top-bottom align-items-center-header">
                             <img class="img-dowload" src="./img/download.svg" alt="download">
                             <h3 class="color-grey f-size-header">Installa app</h3>
                         </div>
                         <div class="riga margine-header-top-bottom"><hr></div>
-                        <div class="flex margine-header-top-bottom align-items-center">
+                        <div class="flex margine-header-top-bottom align-items-center-header">
                             <img class="img-profile" src="./img/profile.svg" alt="profile">
                             <h3 class="color-white f-size-header">Antonio Irrera</h3>
                         </div>
@@ -148,7 +148,41 @@
             </main>
 
             
-            <footer>
+            <footer class="flex justify-content-space-between">
+                <section class="flex align-items-center first-section-footer">
+                    <img class="img-footer" src="./img/player_left.jpg" alt="player_left">
+                    <div class="margini-footer-1rem">
+                        <h3 class="color-white">Sinister</h3>
+                        <p class="color-grey">Brano Name</p>
+                    </div>
+                    <section class="flex">
+                        <i class="fa-regular fa-heart color-grey margini-footer-5rem"></i>
+                        <i class="fa-regular fa-folder color-grey margini-footer-5rem"></i>
+                    </section>
+                </section>
+                <section class="flex f-direction-column">
+                    <div>
+                        <i class="color-white fa-solid fa-shuffle"></i>
+                        <i class="color-white fa-solid fa-backward-step"></i>
+                        <i class="color-white fa-regular fa-circle-play"></i>
+                        <i class="color-white fa-solid fa-forward-step"></i>
+                        <i class="color-white fa-solid fa-arrow-rotate-right"></i>
+                    </div>
+
+                    <div class="flex">
+                        <p class="color-white">0:25</p>
+                        <div class="tempo-trascorso-canzone"><hr class="tempo-bianco"></div>
+                        <div class="tempo-totale-canzone"><hr class="tempo-grigio"></div>
+                        <p class="color-white">4:35</p>
+                    </div>
+                </section>
+                <section class="flex align-items-center last-section-footer">
+                    <i class="color-white fa-solid fa-list-ul"></i>
+                    <i class="color-white fa-solid fa-display"></i>
+                    <i class="color-white fa-solid fa-volume-high"></i>
+                    <div class="tempo-trascorso-volume"><hr class="tempo-bianco"></div>
+                    <div class="tempo-totale-volume"><hr class="tempo-grigio"></div>
+                </section>
                 
             </footer>
             
@@ -157,12 +191,15 @@
 </html>
 <!-- 
 
-    contenuti main inseriti e tutti giusti
-    sistemare movimento layout quando si restringe  
+    sistemare movimento layout main quando si restringe in larghezza  
+    il footer che si restringe in altezza
 
-    fare header e footer (tutti i layout responsive)
-    e il footer che si restringe in altezza
+    fare header (tutti i layout responsive) fatto    
+    footer (tutti i layout responsive)
+    
+    fare hover vari
 
+    sistemare margini/padding/font-size/font-family/ecc...
 -->
 
 <!--
