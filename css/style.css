@@ -89,7 +89,7 @@ footer{
 /* --------------- */
 
 .padding-header{
-    padding: 1rem;
+    padding: 0.5rem 1rem;
 }
 
 .margine-header-top-bottom{
@@ -129,15 +129,20 @@ nav.flex{
 .img-utility{
     width: 15%;
 
+    filter: brightness(0.5);
+
 }
 
 
 .img-dowload{
-    width: 5%;
+    width: 10%;
+    filter: brightness(0.5);
 }
 
 .img-profile{
-    width: 10%;
+    width: 13%;
+    border-radius: 100%;
+    background-color: grey;
 }
 
 div.flex>h3.f-size-header{
@@ -148,6 +153,8 @@ div.align-items-center>i{
     font-size: 3rem;
 }
 
+
+
 .margine-playlist{
     margin: 1.2rem 0;
 }
@@ -155,6 +162,7 @@ div.align-items-center>i{
 div.riga>hr{
     border-color: grey;
 }
+
 
 
 @media all and (max-width:575px) {
