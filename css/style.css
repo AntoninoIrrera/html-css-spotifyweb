@@ -9,7 +9,7 @@
 
 header{
     background-color: #000000;
-    height: 90vh;
+    height: calc(100vh - 80px);
     width: 230px;
 }
 
@@ -17,16 +17,16 @@ header{
 main{
     background-color: #141922;
     width: calc(100% - 230px);
-    height: 90vh;
+    height:calc(100vh - 80px);
 }
 
 
 footer{
     background-color: #282828;
 
-/* da controllare */
-    height: 10vh;
-/* ----- */
+
+    height: 80px;
+
     
     width: 100%;
 
@@ -633,7 +633,7 @@ section.flex>i{
 
 }
 
-@media all and (max-width:425px) {
+@media all and (max-width:560px) {
 
    
 
