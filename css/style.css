@@ -101,6 +101,7 @@ footer{
     height: 35px;
     position: absolute;
     left: -16px;
+    display: none;
 }
 
 .align-items-center,
@@ -162,6 +163,10 @@ section img:hover{
 div.flex h3.f-size-header:hover{
     cursor: pointer;
     color: white;
+}
+
+div.align-items-center-header:hover hr{
+    display: block;
 }
 
 .fa-square-plus:hover{
@@ -266,7 +271,7 @@ div.contenitori-a3 a{
     font-size: 0.7rem;
     margin: 0 0.5rem;
 }
-/* hover h3 */
+/* hover a3 */
 div.contenitori-a3 a:hover{
     color: white;
     cursor: pointer;
@@ -277,6 +282,11 @@ div.contenitori-a3 a:hover{
     width: 25px;
     position: absolute;
     left: 35%;
+    display: none;
+}
+
+div.contenitori-a3 a:hover hr{
+    display: block;
 }
 
 .p-relative{
@@ -300,6 +310,7 @@ div.p-relative:hover img.img-suggerimenti{
 /* hover css bottoni-circle-play */
 div.p-relative:hover>i.fa-circle-play{
     display: inline-block;
+    cursor: pointer;
 }
 /* ------- */
 .dischi{
