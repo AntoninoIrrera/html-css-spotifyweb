@@ -338,7 +338,7 @@ div.p-relative:hover img.img-suggerimenti{
 }
 
 div.p-relative:hover>i.fa-circle-play{
-    display: inline;
+    display: inline-block;
 }
 
 
@@ -646,6 +646,57 @@ section.flex>i{
     margin: 0 1rem;
     font-size: 0.8rem;
 }
+
+
+div.margini-footer-1rem>p:hover{
+    color: white;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+section.flex>i.fa-heart:hover,
+section.flex>i.fa-folder:hover{
+    color: white;
+    cursor: pointer;
+}
+
+div.strumenti-play-music>i.fa-circle-play:hover{
+    transform: scale(1.5);
+    cursor: pointer;
+}
+
+
+
+.tempo-trascorso-volume:hover>hr,
+.tempo-trascorso-canzone:hover>hr {
+
+    cursor: pointer;
+    border: 2px solid lightgreen;
+
+}
+
+
+i.fa-circle{
+    color: white;
+
+    font-size: 0.9rem;
+
+    position: absolute;
+
+    right: -15px;
+    top: -5px;
+
+    display: none;
+}
+
+.tempo-trascorso-volume:hover>i,
+.tempo-trascorso-canzone:hover>i{
+    display: inline-block;
+
+    cursor: pointer;
+}
+
+
 
 
 @media all and (max-width:992px) {
