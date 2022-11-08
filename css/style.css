@@ -1,21 +1,19 @@
+/* reset */
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
+/* body */
 body{
     font-family: 'Montserrat', sans-serif;
 }
-
-/* ---------- */
-
+/* css generale header, main e footer */
 header{
     background-color: #000000;
     height: calc(100vh - 80px);
     width: 230px;
 }
-
 
 main{
     background-color: #141922;
@@ -23,23 +21,12 @@ main{
     height:calc(100vh - 80px);
 }
 
-
 footer{
     background-color: #282828;
-
-
     height: 80px;
-
-    
     width: 100%;
-
-
-
-
-    
 }
-
-
+/* media query xs hader e main */
 @media all and (max-width:575px) {
 
     header{
@@ -49,11 +36,9 @@ footer{
     main{
         width: calc(100% - 50px);
     }
-    
+
 }
-
-/* ----------------- */
-
+/* css in comune per più parti */
 .conteiner {
     width: 95%;
     margin: 0 auto;
@@ -98,9 +83,7 @@ footer{
 .padding-left-right{
     padding: 1rem 0.5rem;
 }
-
-/* --------------- */
-
+/* css header */
 .padding-header{
     padding: 0.5rem 1rem;
 }
@@ -116,48 +99,33 @@ footer{
 .riga-header{
     border: 1px solid lime;
     height: 35px;
-
     position: absolute;
     left: -16px;
 }
-
-
 
 .align-items-center,
 .align-items-center-header{
     align-items: center;
 }
 
-
-
 nav.flex{
-
     height: 100%;
-
     justify-content: space-between;
 }
 
 .img-logo{
     width: 80%;
-
     margin-bottom: 1.5rem;
-
 }
 
 .img-logo-small{
-
-  
-    
     display: none;
 }
 
 .img-utility{
     width: 15%;
-
     filter: brightness(0.5);
-
 }
-
 
 .img-dowload{
     width: 10%;
@@ -178,8 +146,6 @@ div.align-items-center-header>i{
     font-size: 3rem;
 }
 
-
-
 .margine-playlist{
     margin: 1.2rem 0;
 }
@@ -187,12 +153,12 @@ div.align-items-center-header>i{
 div.riga>hr{
     border-color: grey;
 }
-
-
+/* hover hader */
 section img:hover{
     cursor: pointer;
     filter: brightness(1);
 }
+
 div.flex h3.f-size-header:hover{
     cursor: pointer;
     color: white;
@@ -202,10 +168,7 @@ div.flex h3.f-size-header:hover{
     cursor: pointer;
     color: white;
 }
-
-
-
-
+/* media query hader */
 @media all and (max-width:575px) {
 
     .padding-header{
@@ -239,8 +202,6 @@ div.flex h3.f-size-header:hover{
 
     .img-dowload{
         width: 50%;
-
-
     }
 
     .img-profile{
@@ -255,17 +216,8 @@ div.flex h3.f-size-header:hover{
         display: none;
     }
 
-
 }
-
-
-
-
-
-
-
-/* -------------------- */
-
+/* css main */
 .header-main{
     background-color: #080b12;
     padding: 1.5rem 0;
@@ -277,20 +229,15 @@ div.flex h3.f-size-header:hover{
     background-color: #080b12;
     color: white;
     border: 1px solid white;
-
     padding: 1rem 2.5rem;
-
     font-size: 0.7rem;
-
     margin-right: 1.5rem;
 }
-
+/* hover bottone header-main */
 .bottone-upgrade:hover{
     transform: scale(1.2);
 }
-
-/* ------------- */
-
+/* ------- */
 .nav-main{
     text-align: center;
 }
@@ -307,7 +254,6 @@ div.flex h3.f-size-header:hover{
     display: inline;
 }
 
-
 div.contenitori-a3 a{ 
     text-decoration: none;
     color: grey;
@@ -315,28 +261,18 @@ div.contenitori-a3 a{
     font-size: 0.7rem;
     margin: 0 0.5rem;
 }
-
+/* hover h3 */
 div.contenitori-a3 a:hover{
-
     color: white;
     cursor: pointer;
-
 }
-
-
+/* --------- */
 .riga-small-nav-main{
     border: 1px solid lime;
     width: 25px;
     position: absolute;
-    
     left: 35%;
 }
-
-
-
-
-
-/* ----------------- */
 
 .p-relative{
     position: relative;
@@ -346,42 +282,24 @@ div.p-relative>i.fa-circle-play{
     position: absolute;
     left: 50%;
     top: 50%;
-
     transform: translate(-50% , -50%);
-
     font-size: 5rem;
-
-
     display: none;  
 }
 
 div.p-relative:hover img.img-dischi,
 div.p-relative:hover img.img-artisti,
 div.p-relative:hover img.img-suggerimenti{
-
     filter: opacity(0.5);
-
 }
-
+/* hover css bottoni-circle-play */
 div.p-relative:hover>i.fa-circle-play{
     display: inline-block;
 }
-
-
-
-
-/* ----------- */
+/* ------- */
 .dischi{
     width: calc((100% / 6) - 1rem);
-    
     text-align: center;
-
-    /* da eliminare */
-    /* background-color: red; */
-    /* height: 200px;  */
-    /* --------- */
-
-
 }
 
 .img-dischi{
@@ -397,9 +315,6 @@ div.dischi>h2{
     font-size: 0.9rem;
 }
 
-
-/* ------------ */
-
 .color-grey{
     color: grey;
 }
@@ -410,17 +325,9 @@ section.conteiner>p.color-grey{
     margin-top: 0.5rem;
 }
 
-/* ------------ */
-
 .suggerimenti{
-
     width:calc((100% / 6) - 1rem);
-
     text-align: center;
-    /* da eliminare */
-    /* height: 200px; */
-    /* background-color: blue; */
-    /* --- */
 }
 
 .img-suggerimenti{
@@ -432,20 +339,9 @@ div.suggerimenti>h2{
     font-size: 0.8rem;
 }
 
-
-/* ------------- */
-
 .artisti{
-
     width: calc((100% / 6) - 1rem);
     text-align: center;
-    /* border-radius: 100%; */
-
-    /* da eliminare */
-    /* height: 250px; */
-    /* background-color: violet; */
-    /* --------- */
-
 }
 
 .img-artisti{
@@ -457,8 +353,7 @@ div.artisti>h2{
     font-size: 0.8rem;
     margin-top: 0.5rem;
 }
-
-
+/* media query main */
 @media all and (max-width:992px) {
     
     .dischi{
@@ -473,8 +368,6 @@ div.artisti>h2{
         margin-top: 0.5rem;
     }
 
-
-
     .suggerimenti{
         width: calc((100% / 4) - 1rem);
     }
@@ -487,12 +380,10 @@ div.artisti>h2{
         display: block;
     }
 
-    
     .contenitori-a1{
         margin-top: 2rem;
     }
     
-
 }
 
 @media all and (max-width:768px) {
@@ -508,7 +399,6 @@ div.artisti>h2{
     .artisti {
         width: calc((100% / 2) - 1rem);
     }
-
 
     .dischi:nth-last-child(3) {
         margin-top: 0.5rem;
@@ -526,25 +416,19 @@ div.artisti>h2{
         display: inline-block;
     }
 
-    
-   
-    
-
 }
 
 @media all and (max-width:575px) {
 
    .contenitori-a3{
-    display: inline;
+        display: inline;
    }
 
    .contenitori-a2{
-       display: block;
+        display: block;
    }
 
-    
 }
-
 
 @media all and (max-width:430px) {
 
@@ -563,6 +447,7 @@ div.artisti>h2{
     .contenitori-a1{
         display: inline;
     }
+
 }
 
 @media all and (max-width:320px) {
@@ -573,17 +458,12 @@ div.artisti>h2{
     }
     
 }
-
-/* ---------- */
-
-
-
+/* css footer */
 .margini-footer-1rem{
     margin: 0 1rem;
 }
 
 .margini-footer-5rem{
-
     margin: 0 0.5rem;
 }
 
@@ -621,8 +501,6 @@ section.f-direction-column{
     align-items: center;
 }
 
-
-
 .canzone{
     display: flex;
 }
@@ -638,7 +516,6 @@ section.f-direction-column{
     border-radius: 25px;
     width: 200px;
 }
-
 
 footer div.flex{
     width: 100%;
@@ -675,13 +552,11 @@ footer div>i{
     width: 80px;
 }
 
-
 section.flex>i{
     margin: 0 1rem;
     font-size: 0.8rem;
 }
-
-
+/* hover footer */
 div.margini-footer-1rem>p:hover{
     color: white;
     cursor: pointer;
@@ -698,25 +573,16 @@ div.strumenti-play-music>i.fa-circle-play:hover{
     transform: scale(1.5);
     cursor: pointer;
 }
-
-
-
-
-
-
+/* --------- */
 i.fa-circle{
     color: white;
-
     font-size: 0.9rem;
-
     position: absolute;
-
     left: 25px;
     top: -5px;
-
     display: none;
 }
-
+/* hover barra canzone e volume */
 div.canzone:hover{
     cursor: pointer;
 }
@@ -740,16 +606,9 @@ div.volume:hover>hr.tempo-bianco-volume {
 div.volume:hover>i.fa-circle {
     display: inline-block;
 }
-
-
-
-
+/* media query footer */
 @media all and (max-width:992px) {
     
-    
-
-    
-
     div.margini-footer-1rem>p {
         width: 70px;
     }
@@ -762,6 +621,7 @@ div.volume:hover>i.fa-circle {
 }
 
 @media all and (max-width:800px) {
+
     .tempo-bianco-canzone {
         width: 25px;
     }
@@ -774,10 +634,10 @@ div.volume:hover>i.fa-circle {
         left: 15px;
     }
 
-
     .tempo-grigio-canzone {
         width: 100px;
     }
+
 }
 
 @media all and (max-width:768px){
@@ -792,7 +652,7 @@ div.volume:hover>i.fa-circle {
 
 }
 
-@media all and (max-width:660px){
+@media all and (max-width:690px){
 
     section.flex>i{
         margin: 0 0.2rem;
@@ -807,10 +667,10 @@ div.volume:hover>i.fa-circle {
         width: 100%;
     }
 
-
 }
 
 @media all and (max-width:610px) {
+
     .tempo-bianco-canzone {
         width: 15px;
     }
@@ -826,12 +686,10 @@ div.volume:hover>i.fa-circle {
     .tempo-grigio-canzone {
         width: 80px;
     }
+
 }
 
-
 @media all and (max-width:560px) {
-
-   
 
     footer div>i {
         margin: 0 0.2rem 0.5rem 0.2rem;
@@ -850,7 +708,6 @@ div.volume:hover>i.fa-circle {
         margin: 0 0.2rem;
     }
 
-
     section.last-section-footer>i{
         font-size: 0.7rem;
     }
@@ -863,12 +720,11 @@ div.volume:hover>i.fa-circle {
 
 @media all and (max-width:480px) {
     
-
     .tempo-grigio-volume{
         width: 50px;
     }
-}
 
+}
 
 @media all and (max-width:440px) {
 
@@ -881,7 +737,6 @@ div.volume:hover>i.fa-circle {
         display: none;
     }
 
-
     footer div>i {
         font-size: 0.8rem;
     }
@@ -890,19 +745,17 @@ div.volume:hover>i.fa-circle {
 
 @media all and (max-width:360px) {
 
-    
-
-
     footer div>i {
         font-size: 0.6rem;
     }
 
-    
-
 }
 
 @media all and (max-width:320px) {
+
     .tempo-grigio-canzone{
         width: 60px;
     }
+
 }
+/* ------------ */

@@ -17,27 +17,34 @@
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     </head>
     <body>
+        <!-- contenitore per body con header, main e footer -->
         <div class="flex f-wrap">
+            <!-- header laterale con navbar -->
             <header>
                 <nav class="flex conteiner f-direction-column padding-header overflow-y">
                     <section>
+                        <!-- img logo -->
                         <img class="img-logo" src="./img/logo.svg" alt="logo">
                         <img class="img-logo-small" src="./img/logo-small.svg" alt="logo-small">
                         <section class="flex f-direction-column">    
+                            <!-- tasto home -->
                             <div class="p-relative flex margine-header-top-bottom align-items-center-header">
                                 <hr class="riga-header">
                                 <img class="img-utility" src="./img/home.svg" alt="home">
                                 <h3 class="color-grey f-size-header">Home</h3>
                             </div>
+                            <!-- tasto cerca -->
                             <div class="flex margine-header-top-bottom align-items-center-header">
                                 <img class="img-utility" src="./img/search.svg" alt="search">
                                 <h3 class="color-grey f-size-header">Cerca</h3>
                             </div>
+                            <!-- tasto libreria -->
                             <div class="flex margine-header-top-bottom align-items-center-header">
                                 <img class="img-utility" src="./img/libreria.svg" alt="libreria">
                                 <h3 class="color-grey f-size-header">La tua libreria</h3>
                             </div>
                         </section>
+                        <!-- section playlist -->
                         <section class="playlist">
                             <h2 class="color-white margine-header-top-bottom text-uppercase f-size-header">playlist</h2>
                             <div class="flex margine-header-top-bottom align-items-center-header">
@@ -53,6 +60,7 @@
                             <h3 class="color-grey margine-playlist f-size-header">Nome Playlist</h3>
                         </section>
                     </section>
+                    <!-- parte finale header utente e dowload app -->
                     <section>
                         <div class="flex margine-header-top-bottom align-items-center-header">
                             <img class="img-dowload" src="./img/download.svg" alt="download">
@@ -66,11 +74,13 @@
                     </section>
                 </nav>
             </header>
-
+            <!-- main con tutto il contenuto principale -->
             <main class="overflow-y">
+                <!-- tasto upgrade -->
                 <section class="header-main">
                     <button class="bottone-upgrade text-uppercase">effettua l'upgrade</button>
                 </section>
+                <!-- navbar main -->
                 <section class="nav-main general-padding">
                     <div class="contenitori-a3">
                         <a class="text-uppercase p-relative" href="#">in evidenza <hr class="riga-small-nav-main"></a>
@@ -87,7 +97,9 @@
                         </div>
                     </div>
                 </section>
+                <!-- --------- -->
                 <h2 class="color-white general-padding conteiner padding-left-right">Recently played</h2>
+                <!-- sezioni dischi -->
                 <section class="flex general-padding conteiner f-wrap">
                     <div class="dischi margine-generale">
                         <div class="p-relative">
@@ -138,10 +150,12 @@
                         <p class="color-grey">subtitle</p>
                     </div>
                 </section>
+                <!-- ---------- -->
                 <section class="general-padding conteiner padding-left-right">
                     <h2 class="color-white">Creato per Antonio Irrera</h2>
                     <p class="color-grey">Più ascolti, più accurati saranno i suggerimenti.</p>
                 </section>
+                <!-- sezione suggerimenti -->
                 <section class="flex general-padding conteiner">
                     <div class="suggerimenti margine-generale">
                         <div class="p-relative">
@@ -158,10 +172,12 @@
                         <h2 class="color-white">Daily Mix 1</h2>
                     </div>
                 </section>
+                <!-- -------- -->
                 <section class="general-padding conteiner padding-left-right">
                     <h2 class="color-white">Artisti più popolari</h2>
                     <p class="color-grey">Più ascolti, più accurati saranno i suggerimenti.</p>
                 </section>
+                <!-- sezione artisti -->
                 <section class="flex general-padding conteiner">
                     <div class="artisti margine-generale">
                         <div class="p-relative">
@@ -178,14 +194,10 @@
                         <h2 class="color-white">Ludovico Einaudi</h2>
                     </div>
                 </section>
-
-
-
-
             </main>
-
-            
+            <!-- footer -->
             <footer class="flex justify-content-space-between">
+                <!-- parte sinistra brano, preferito e cartella -->
                 <section class="flex align-items-center first-section-footer">
                     <img class="img-footer" src="./img/player_left.jpg" alt="player_left">
                     <div class="margini-footer-1rem">
@@ -197,6 +209,7 @@
                         <i class="fa-regular fa-folder color-grey margini-footer-5rem"></i>
                     </section>
                 </section>
+                <!-- parte centrale tasti controllo canzone e barra canzone -->
                 <section class="flex f-direction-column">
                     <div class="strumenti-play-music">
                         <i class="color-white fa-solid fa-shuffle"></i>
@@ -205,7 +218,7 @@
                         <i class="color-white fa-solid fa-forward-step"></i>
                         <i class="color-white fa-solid fa-arrow-rotate-right"></i>
                     </div>
-
+                    <!-- barra canzone -->
                     <div class="flex">
                         <p class="color-white">0:25</p>
                         <div class="canzone p-relative">
@@ -216,19 +229,20 @@
                         <p class="color-white">4:35</p>
                     </div>
                 </section>
+                <!-- parte destra barra volume, tasti lista cosa e display -->
                 <section class="flex align-items-center last-section-footer">
                     <i class="color-white fa-solid fa-list-ul"></i>
                     <i class="color-white fa-solid fa-display"></i>
                     <i class="color-white fa-solid fa-volume-high"></i>
+                    <!-- barra volume -->
                     <div class="volume  p-relative">
                         <hr class="tempo-bianco-volume">
                         <i class="fa-solid fa-circle"></i>                  
                         <hr class="tempo-grigio-volume">
                     </div>
                 </section>
-                
+                <!-- --------- -->
             </footer>
-            
         </div>
     </body>
 </html>
