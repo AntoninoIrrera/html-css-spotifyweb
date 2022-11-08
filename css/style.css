@@ -264,7 +264,11 @@ div.flex h3.f-size-header:hover{
 
     font-size: 0.7rem;
 
-    margin-right: 0.5rem;
+    margin-right: 1.5rem;
+}
+
+.bottone-upgrade:hover{
+    transform: scale(1.2);
 }
 
 /* ------------- */
@@ -285,9 +289,8 @@ div.flex h3.f-size-header:hover{
     display: inline;
 }
 
-div.contenitori-a3>a,
-div.contenitori-a2>a,
-div.contenitori-a1>a{
+
+div.contenitori-a3 a{ 
     text-decoration: none;
     color: grey;
     font-weight: bold;
@@ -295,11 +298,53 @@ div.contenitori-a1>a{
     margin: 0 0.5rem;
 }
 
+div.contenitori-a3 a:hover{
+
+    color: white;
+    cursor: pointer;
+
+}
+
+
+
+
+
+
 /* ----------------- */
 
+.p-relative{
+    position: relative;
+}
+
+div.p-relative>i.fa-circle-play{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+
+    transform: translate(-50% , -50%);
+
+    font-size: 5rem;
+
+
+    display: none;  
+}
+
+div.p-relative:hover img.img-dischi,
+div.p-relative:hover img.img-artisti,
+div.p-relative:hover img.img-suggerimenti{
+
+    filter: opacity(0.5);
+
+}
+
+div.p-relative:hover>i.fa-circle-play{
+    display: inline;
+}
 
 
 
+
+/* ----------- */
 .dischi{
     width: calc((100% / 6) - 1rem);
     
