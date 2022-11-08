@@ -802,3 +802,28 @@ i.fa-circle{
     }
 
 }
+
+
+@media all and (max-width:420px) {
+
+    div.margini-footer-1rem{
+        display: none;
+    }
+
+
+    footer div>i {
+        font-size: 0.8rem;
+    }
+    
+}
+
+@media all and (max-width:360px) {
+
+    
+
+
+    footer div>i {
+        font-size: 0.6rem;
+    }
+
+}
