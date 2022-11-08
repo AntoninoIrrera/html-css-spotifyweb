@@ -4,6 +4,9 @@
     box-sizing: border-box;
 }
 
+body{
+    font-family: 'Montserrat', sans-serif;
+}
 
 /* ---------- */
 
@@ -305,6 +308,14 @@ div.contenitori-a3 a:hover{
 
 }
 
+
+.riga-small-nav-main{
+    border: 1px solid lime;
+    width: 25px;
+    position: absolute;
+    
+    left: 35%;
+}
 
 
 
