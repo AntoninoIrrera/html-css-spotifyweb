@@ -113,6 +113,15 @@ footer{
     font-size: 0.8rem;
 }
 
+.riga-header{
+    border: 1px solid lime;
+    height: 35px;
+
+    position: absolute;
+    left: -16px;
+}
+
+
 
 .align-items-center,
 .align-items-center-header{
@@ -241,6 +250,12 @@ div.flex h3.f-size-header:hover{
     .align-items-center-header{
         justify-content: center;
     }
+
+    .riga-header{
+        display: none;
+    }
+
+
 }
 
 
