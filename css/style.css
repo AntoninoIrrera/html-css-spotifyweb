@@ -177,6 +177,22 @@ div.riga>hr{
 }
 
 
+section img:hover{
+    cursor: pointer;
+    filter: brightness(1);
+}
+div.flex h3.f-size-header:hover{
+    cursor: pointer;
+    color: white;
+}
+
+.fa-square-plus:hover{
+    cursor: pointer;
+    color: white;
+}
+
+
+
 
 @media all and (max-width:575px) {
 
