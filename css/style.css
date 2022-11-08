@@ -761,8 +761,7 @@ i.fa-circle{
    
 
     footer div>i {
-        font-size: 0.8rem;
-        margin: 0 0.2rem 0.2rem 0.2rem;
+        margin: 0 0.2rem 0.5rem 0.2rem;
     }
 
     .first-section-footer{
@@ -776,6 +775,15 @@ i.fa-circle{
     section.flex>i.fa-heart,
     section.flex>i.fa-folder{
         margin: 0 0.2rem;
+    }
+
+
+    section.last-section-footer>i{
+        font-size: 0.7rem;
+    }
+
+    div.flex>p.color-white{
+        font-size: 0.5rem;
     }
 
 }
